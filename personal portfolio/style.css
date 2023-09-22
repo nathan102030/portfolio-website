@@ -1,0 +1,293 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #080808;
+    color: #fff;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/butler.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    padding: 10px 10%;
+}
+nav{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.nathan_image{
+    width: 140px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin:10px 20px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0%; /* set to 100*/
+    height: 3px;
+    background: #000000;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+}
+.header-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+    
+}
+.header-text h1 span{
+    color: #CCFFFF;
+}
+/*----------about----------*/
+#about{
+    padding: 80px 0;
+    color: #fff;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.about-col-2{
+    flex-basis: 60%;
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background:#3366CC;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width:50%;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.tab-contents ul li span{
+    color:#3366CC;
+    font-size: 20px;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+/*--------portfolio---------*/
+#portfolio{
+    padding: 80px 0;
+    height: 100vh;
+}
+
+
+.githubImage{
+    flex-basis: 35%;
+}
+
+.githubImage img{
+    width:50vh;
+    height:auto;
+    padding: 80px 0;
+    margin-bottom: 50%;
+}
+
+.portfolioLink{
+    flex-basis: 60%;
+}
+
+
+.githubProfileLink{
+    color: white;
+    font-size: 30px;
+    transition: 0.5s;
+}
+
+.githubProfileLink:visited{
+    color: #6fa8dc;
+    font-size: 30px;
+}
+
+.githubProfileLink:hover{
+    color: white;
+    font-size: 35px;
+    transition: 0.5s;
+}
+.githubProfileLink:active {
+    color: white;
+    font-size: 30px;
+}
+.span-one {
+    font-size: 24px;
+    color:#6699CC;
+}
+#contact{
+    padding: 80px 0px;
+    height: 100vh;
+}
+
+.contactpic img{
+    width:45vh;
+    height: auto;
+    padding: 80px 0px;
+    margin-bottom: 50%;
+}
+
+.emaillink{
+    flex-basis: 60%;
+}
+
+.allEmails{
+    color: white;
+    font-size: 50px;
+}
+
+.emaillink{
+    color: #6fa8dc;
+    font-size: 30px;
+    transition: 0.5s;
+}
+
+.emaillink:visited{
+    color: #6fa8dc;
+    font-size: 30px;
+}
+
+.emaillink:hover{
+    color: white;
+    font-size: 35px;
+    transition: 0.5s;
+}
+
+.emaillink:active{
+    color: white;
+    font-size: 30px;
+}
+
+
+
+#linkedin{
+    padding: 80px 0px;
+    height: 100vh;
+}
+
+.linkedinpic img{
+    width:40vh;
+    height: auto;
+    padding: 80px 0px;
+    margin-bottom: 50%;
+}
+
+
+.linkedinlink{
+    flex-basis: 60%;
+}
+
+.linkedin{
+    color: white;
+    font-size: 50px;
+}
+
+.linkedinlink{
+    color: #6fa8dc;
+    font-size: 30px;
+    transition: 0.5s;
+}
+
+.linkedinlink:visited{
+    color: #6fa8dc;
+    font-size: 30px;
+}
+
+.linkedinlink:hover{
+    color: white;
+    font-size: 35px;
+    transition: 0.5s;
+}
+
+.linkedinlink:active{
+    color: white;
+    font-size: 30px;
+}
+
+
+@media only screen and (max-width:1200px){
+
+    .smallScreen{
+        color: white;
+        display:block;
+    }
+
+    #header{
+        display: none;
+    }
+
+    #about{
+        display: none;
+    }
+
+    #contact{
+        display: none;
+    }
+
+    #portfolio{
+        display: none;
+    }
+}
