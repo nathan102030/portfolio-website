@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nathan's Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <h1 class="smallScreen">Welcome to my website. In order to see it you must view in full screen</h1>
+    </div>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src=" images/nathan_image.png" class="nathan_image">
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>Aspiring Software Engineer</p>
+            <h1>Hi, I'm <span>Nathan Demssie</span>  <br> From Washington,DC</h1>
+        </div>
+        
+    </div>
+</div>  
+<!----------about--------->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/221.8.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p> I am a Sophmore Student at Columbia University in the City of New York.
+                    My intended major is Computer Science. I am really interested in
+                    machine learning, artificial intellignece, and Software Development. I am from Washington DC
+                    and in my free time I love to lift weights and play basketball.</p>
+                    
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experiance')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('resume')">Resume</p>
+                    </div> 
+                    <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Java</span><br>Data Structures, Object Oriented Programming, Dynamic Programming</li>
+                        <li><span>Python</span><br>NumPy, Pandas, Jupyter</li>
+                        <li><span>HTML & CSS</span><br>Front-end Web Development</li>
+                        <li><span>Swift</span><br>App Development</li>
+                    </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Columbia University</span><br>Bachelor in Science in Computer Science. Current-2026</li>
+                            <li><span>St Anselm's Abbey School</span><br>Benedictine Scholar. Graduated 2018-2022</li>
+                        </ul>
+                        </div>
+                    
+                    <div class="tab-contents" id="experiance">
+                        <ul>
+                            <li><span>Tutor/Junior Aide</span><br>Tutored and mentored students in a STEM-based program
+                                 emphasizing Mathematics, Computer Science, General Science, and Engineering.</li>
+                            <li><span>LLC Manager</span><br>Organized a mock LLC called "Crankage ENT" with the hopes of marketing, 
+                                producing, and promoting an ep(extended play record) and a cipher for a benefit concert.</li>
+                    </div>
+                    <div class="tab-contents" id="resume">
+                        <object data="resume.pdf" type="application/pdf" width="100%" height="450px"></object>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-----portfolio--------->
+<div id="portfolio">
+    <div class="container">
+        
+        <div class="row">
+            <div class="githubImage">
+                <img src="images/git.png">
+            </div>
+            
+            <div class="portfolioLink">
+                <h2 class="sub-title">My Portfolio</h2>
+                <a href="https://github.com/nathan102030" target=_blank class="githubProfileLink">GitHub Profile</a>
+                <br>
+                <br>
+                <span class="span-six">My Projects</span><br>
+                <ul>
+                    <br>
+                    <li><span class="span-one">Personal Website</span></li>
+                    <span class="span-two">Designed and implemented this website using HTML, CSS, and JavaScript. Utilized various transition delays, page divs,
+                        font modifications, hrefs, spans, etc.
+                    </span>
+                    <li><span class="span-one">2D Single Cell Segmentation (Biomedical Engineering Departmental Project)</span></li>
+                    <span class="span-two"> Implemented a deep neural network model in Python to segment single cells within baby hamster kidney (BHK) cell cultures.
+                        Train a U-Net model on a dataset to perform single-cell segmentation on Jupyter Notebook using Python.
+                        Use 50 epochs to train a neural network and compare it to the original test set by analyzing the DICE score per epoch.
+                        Determine the best epoch to model the data and compute its performance on test samples with 98.4% accuracy.
+                        Presented the results of the best-performing model to Columbia's Biomedical Engineering Department.</span>
+                    <li><span class="span-one">Button Mash</span></li>
+                    <span class="span-two"> Develop a Piano Tiles clone in C++ using an Arduino, input detection, LED panel, and user interface.
+                        Work within a team of five students weekly and allocate our skills for design, construction, and coding.
+                    </span>
+                    <li><span class="span-one">Analyzing NYC Air Pollution</span></li>
+                    <span class="span-two"> Used data published by The City of New York to analyze particulate matter(pm2.5) These matters may appear naturally but in dense cities are caused by traffic and domestic heating(burning of oil and gas). Data set consisted of 1824 measurements for air quality for NYC neighborhoods from 2008-2020. With this data I wrote a tool which enabled a user to query information about their neighborhood within a particular time frame. I also utilized the dataset in order to detect trends in air quality in NYC.</span>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-------contact------------->
+<div id="contact">
+    <div class="container">
+        
+        <div class="row">
+            <div class="contactpic">
+                <img src="images/email.png">
+            </div>
+            
+            <div class="emaillink">
+                <h2 class="allEmails">My Emails:</h2>
+                <a href=mailto:nathandemssie@gmail.com target=_blank class="emailLink">nathandemssie@gmail.com</a><br>
+                <a href=mailto:nsd2145@columbia.edu target=_blank class="emailLink">nsd2145@columbia.edu</a>
+            </div>
+        </div>
+<!---->
+        <div id="linkedin">
+            <div class="container">
+                
+                <div class="row">
+                    <div class="linkedinpic">
+                        <img src="images/li.png">
+                    </div>
+                    
+                    <div class="linkedinlink">
+                        <h2 class="linkedin">My LinkedIn:</h2>
+                        <a href=https://www.linkedin.com/in/nathan-demssie-28b77524b/ target=_blank class="linkedinProfileLink">LinkedIn Profile</a>
+    <br>                
+    </div>
+                </div>
+    
+
+<script>
+
+
+    var tablinks= document.getElementsByClassName("tab-links");
+    var tabcontents= document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+
+    
+
+
+</script>
+
+</body>
+</html>
